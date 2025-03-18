@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/964f1f37-6c6e-4734-aaba-aec215a407b0
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/964f1f37-6c6e-4734-aaba-aec215a407b0) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+# Rockae.Website
+This is rockae informative website
 
 **Use your preferred IDE**
 
@@ -61,14 +47,50 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+Below is a set of step-by-step instructions in Markdown format that you can add directly to your README or another documentation file. These steps cover creating a feature branch, pushing your changes, and then creating a pull request (PR) on GitHub.
 
-Simply open [Lovable](https://lovable.dev/projects/964f1f37-6c6e-4734-aaba-aec215a407b0) and click on Share -> Publish.
+---
 
-## I want to use a custom domain - is that possible?
+## How to Push Changes Using a Feature Branch and Create a Pull Request
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
-=======
-# Rockae.Website
-This is rockaes official informative website
->>>>>>> e9c9804ea2fc47837d939e7a38a89e1145f20698
+1. **Clone the Repository (if you haven’t already):**  
+   Open your terminal and run:  
+   ```bash
+   git clone https://github.com/MyRockae/Rockae.Website.git
+   cd Rockae.Website
+   ```
+
+2. **Create a New Feature Branch:**  
+   Create and switch to a new branch for your feature. Replace `your-feature-name` with a descriptive name for your feature.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Make Changes and Save Your Work:**  
+   Edit your code locally. When you are ready, stage your changes with:
+   ```bash
+   git add .
+   ```
+   *(Tip: You can replace the dot (`.`) with specific file names if you don’t want to add everything.)*
+
+4. **Commit Your Changes:**  
+   Commit your staged changes with a meaningful commit message:
+   ```bash
+   git commit -m "Add feature: description of your changes"
+   ```
+
+5. **Push Your Feature Branch to GitHub:**  
+   Push your branch and set the upstream branch:
+   ```bash
+   git push -u origin feature/your-feature-name
+   ```
+
+6. **Create a Pull Request (PR) on GitHub:**  
+   - Open your web browser and navigate to your repository: [https://github.com/MyRockae/Rockae.Website](https://github.com/MyRockae/Rockae.Website)
+   - You should see a prompt to create a pull request for your recently pushed branch. Click **"Compare & pull request"**.
+   - Fill in the title and description for your PR, then click **"Create pull request"**.
+
+7. **Review and Merge:**  
+   Once the PR is created, it can be reviewed by your team. After approval, the changes can be merged into the main branch.
+
+---
