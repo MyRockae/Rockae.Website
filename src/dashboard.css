@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+ 
+/*----------------------------------
+   Main Content
+-------------------------------- */
+.main-content {
+   flex: 1; 
+   padding: 20px;
+   background: white;
+   box-sizing: border-box;
+   position: relative;
+   min-height: 100vh; 
+ }
+ 
+ .content {
+   background: #0e4bf1;
+   border: 2px solid #0e4bf1;
+   border-radius: 10px;
+   padding: 20px;
+   margin-top: 20px;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   min-height: 400px; /* just for example */
+ }

@@ -1,0 +1,26 @@
+/* ============================================ 
+   GLOBAL STYLES & RESET
+============================================ */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import "tailwindcss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .home-page,
+body .about-page,
+body .howitworks-page
+ {
+  background: #1A8FE3;
+  overflow-x: hidden; /* keep X hidden if you want to prevent horizontal scroll */
+  overflow-y: auto;   /* enable vertical scrolling */
+  min-height: 100vh; 
+}
+
+
+  
