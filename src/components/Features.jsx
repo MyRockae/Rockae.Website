@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const FeaturesSection = styled.section`
   padding: 4rem 2rem;
   background-color: #fafafa;
+  scroll-margin-top: 80px;
 `;
 
 const SectionTitle = styled.h2`
@@ -175,7 +176,7 @@ const features = [
 
 const Features = () => {
   return (
-    <FeaturesSection>
+    <FeaturesSection id="features">
       <SectionTitle>
         <span>Score higher</span> <span>with powerful tools.</span>
       </SectionTitle>
@@ -189,7 +190,7 @@ const Features = () => {
             <ExampleContent>
               {feature.example}
             </ExampleContent>
-            <FeatureButton>{feature.title} with Atlas</FeatureButton>
+            <FeatureButton>{feature.title} with Rockae</FeatureButton>
           </FeatureCard>
         ))}
       </FeatureGrid>

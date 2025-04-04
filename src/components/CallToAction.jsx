@@ -34,10 +34,11 @@ const Subtitle = styled.p`
   font-weight: 400;
 `;
 
-const CTAButton = styled.button`
-  background: #2d2d2d;
+const CTAButton = styled.a`
+  display: inline-block;
+  background: #FF6D00;
   color: white;
-  border: none;
+  text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -47,7 +48,7 @@ const CTAButton = styled.button`
 
   &:hover {
     transform: scale(1.05);
-    background: #1a1a1a;
+    background: #e05e00;
   }
 `;
 
@@ -57,15 +58,15 @@ const CallToAction = () => {
       <Container>
         <Title>
           Less stress.<br />
-          Better grades.<br />
-          Free for students.
+          Better experience.<br />
+          Free for anyone.
         </Title>
         <Subtitle>
-          Start setting the curve with the<br />
-          most accurate AI for school.
+          Start setting the pace with<br />
+          most effective learning assistant.
         </Subtitle>
-        <CTAButton>
-          Use Atlas for free
+        <CTAButton href="https://app.rockae.com/register">
+          Use Rockae for free
         </CTAButton>
       </Container>
     </Section>

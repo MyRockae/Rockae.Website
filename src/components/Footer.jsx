@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
-  background-color: #f1f1f1;
+  background-color: rgba(13, 27, 42, 0.95);
   padding: 4rem 2rem;
   margin-top: 4rem;
 `;
@@ -21,13 +21,13 @@ const FooterContent = styled.div`
 `;
 
 const CompanyInfo = styled.div`
-  color: #666;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
   line-height: 1.6;
 `;
 
 const Location = styled.div`
-  color: #999;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.85rem;
   margin-top: 2rem;
 `;
@@ -39,20 +39,20 @@ const LinkGroup = styled.div`
 `;
 
 const LinkGroupTitle = styled.h3`
-  color: #333;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 `;
 
 const FooterLink = styled.a`
-  color: #666;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 
   &:hover {
-    color: #333;
+    color: white;
   }
 `;
 
@@ -63,7 +63,7 @@ const Footer = () => {
         <CompanyInfo>
           We're a team of current and former students and teachers on a mission to make learning accessible and engaging for everyone.
           <Location>
-            © Triangle Labs · LA & NYC
+            © Rockae Inc
           </Location>
         </CompanyInfo>
 
