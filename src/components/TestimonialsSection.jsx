@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Section = styled.section`
   padding: 6rem 2rem;
   text-align: center;
+  scroll-margin-top: 80px;
 `;
 
 const Title = styled.h2`
@@ -63,65 +64,47 @@ const UserInfo = styled.div`
 const testimonials = [
   {
     stars: 5,
-    text: "The Knowledge feature, in particular, is outstanding; its in-depth information from trusted sources has been incredibly useful to me.",
-    name: "Jaz",
+    text: "The AZ900 assessments here were my secret weapon in acing the certification exam.",
+    name: "Alex",
+    location: "United States"
+  },
+  {
+    stars: 5,
+    text: "Using Rockae's dynamic flashcards and interactive challenges, I passed my ACCA exam with confidence. It's a game-changer!",
+    name: "Priya",
+    location: "India"
+  },
+  {
+    stars: 5,
+    text: "I prepared for my JAMB exam here, and its diverse learning tools made revision both engaging and effective.",
+    name: "Omolola",
+    location: "Nigeria"
+  },
+  {
+    stars: 5,
+    text: "As an educator, I rely on Rockae to create engaging quizzes that enhance my students' learning experience and foster interactive classroom discussions.",
+    name: "Dr. Smith",
+    location: "United Kingdom"
+  },
+  {
+    stars: 5,
+    text: "The flashcards feature is amazing—it simplifies revision and helps me retain complex concepts effortlessly for my daily studies.",
+    name: "Emily",
+    location: "Canada"
+  },
+  {
+    stars: 5,
+    text: "Rockae's interactive challenges and diverse content transformed my GRE prep. The blend of quizzes, flashcards, and dynamic assessments is truly invaluable.",
+    name: "Jordan",
     location: "Australia"
-  },
-  {
-    stars: 5,
-    text: "I saw it on TikTok and decided to give it a try. In less than 20 minutes I thought it was the best study AI tool I had ever seen.",
-    name: "Sene",
-    location: "United States"
-  },
-  {
-    stars: 5,
-    text: "I absolutely love using Atlas because it integrates directly with the materials from my courses. It really simplifies my study process, as a regular Google search can often overwhelm me with irrelevant information that doesn't align with what my professors deem important.",
-    name: "Arwa",
-    location: "Canada"
-  },
-  {
-    stars: 5,
-    text: "I was a great student in high school, but college was a tough transition for me. Atlas has been a big help. 10/10 recommend trying it out.",
-    name: "Tim",
-    location: "United States"
-  },
-  {
-    stars: 5,
-    text: "I must say it is significantly better than ChatGPT 😌 In some questions I asked ChatGPT, the answers were inaccurate, while Atlas responded accurately.",
-    name: "Lucia",
-    location: "Spain"
-  },
-  {
-    stars: 5,
-    text: "So easy to use.",
-    name: "Asriel",
-    location: "France"
-  },
-  {
-    stars: 5,
-    text: "I say there is not a single student that walks on this planet who wouldn't benefit of using Atlas as an study assistant.",
-    name: "Timo",
-    location: "Germany"
-  },
-  {
-    stars: 5,
-    text: "This is the best app ever I swear, and I can't believe it's free like I'm being fr I'm shocked.",
-    name: "Brianne",
-    location: "Canada"
-  },
-  {
-    stars: 5,
-    text: "ChatGPT could never 😌 I think Atlas is the only reason I'm passing my classes still.",
-    name: "Celeste",
-    location: "United States"
   }
 ];
 
 const TestimonialsSection = () => {
   return (
-    <Section>
+    <Section id="testimonials">
       <Title>
-        Try the <span className="gradient-text">most loved</span> assistant for school.
+        Try the <span className="gradient-text">most loved</span> learning assistant for anyone.
       </Title>
       <TestimonialsGrid>
         {testimonials.map((testimonial, index) => (

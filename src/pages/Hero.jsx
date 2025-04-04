@@ -12,19 +12,28 @@ const HeroSection = styled.section`
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 80px;
 `;
 
 const Title = styled.h1`
   font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #4285f4, #ea4335);
+  background: linear-gradient(90deg, #3F3DFF, #A078FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
   span {
     color: #000;
     -webkit-text-fill-color: #000;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
   }
 `;
 
@@ -35,16 +44,17 @@ const Subtitle = styled.p`
   max-width: 600px;
 `;
 
-const CTAButton = styled.button`
-  padding: 1rem 2rem;
+const CTAButton = styled.a`
+  padding: 0.8rem 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: #2d2d2d;
+  background-color: #FF6D00;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  text-decoration: none;
 
   &:hover {
     transform: scale(1.05);
@@ -68,19 +78,19 @@ const UniversityLogos = styled.div`
 
 const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection id="hero">
       <Title>
-        Supercharge<br />
-        <span>your grades</span>
+        Elevate<br />
+        <span>Your Learning Journey</span>
       </Title>
       <Subtitle>
-        Study, write, and solve faster with the most accurate AI for school.
+      Use, create and share learning materials—from comprehensive quizzes on popular exams and topics, to personalized assessments for your unique learning needs, dynamic flashcards, IQ games and more interactive experiences.
       </Subtitle>
-      <CTAButton>
-        Use Atlas for free
+      <CTAButton href="https://app.rockae.com">
+        Get Started for Free
       </CTAButton>
       <Stats>
-        Relied on by 800,000+ students at
+        Trusted by thousands of educators, professionals, and students worldwide
       </Stats>
       <UniversityLogos>
         <span>Stanford</span>

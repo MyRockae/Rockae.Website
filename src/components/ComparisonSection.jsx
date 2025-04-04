@@ -29,8 +29,8 @@ const Subtitle = styled.p`
   line-height: 1.6;
 `;
 
-const CTAButton = styled.button`
-  background: #2d2d2d;
+const CTAButton = styled.a`
+  background: #FF6D00;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -38,6 +38,7 @@ const CTAButton = styled.button`
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.2s ease;
 
   &:hover {
@@ -45,8 +46,7 @@ const CTAButton = styled.button`
   }
 `;
 
-const BackgroundImages = styled.div`
-  position: absolute;
+const BackgroundImages = styled.div`  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -91,14 +91,14 @@ const ComparisonSection = () => {
       <Content>
         <Title>
           Other tools guess.<br />
-          <span className="gradient-text">Atlas knows.</span>
+          <span className="gradient-text">Rockae knows.</span>
         </Title>
         <Subtitle>
-          Atlas studies all of your course materials,
+        Rockae studies all of your course materials,
           not just a single lecture or textbook.
         </Subtitle>
-        <CTAButton>
-          Use Atlas for free
+        <CTAButton href="https://app.rockae.com/register">
+          Use Rockae for free
         </CTAButton>
       </Content>
     </Section>
